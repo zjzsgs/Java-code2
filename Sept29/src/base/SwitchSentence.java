@@ -1,0 +1,45 @@
+package base;
+
+import java.util.Scanner;
+
+public class SwitchSentence {
+
+	public static void main(String[] args) {
+		while(true){
+			int a=-1;
+			try {
+				System.out.println("从键盘输入一个0——6的整数：");
+				Scanner scanner = new Scanner(System.in);
+				a = scanner.nextInt();
+			} catch (Exception e) {
+				System.out.println("您输入的不是整数！");
+			}
+			switch (a) {
+			case 0:
+				System.out.println("今天是星期日");
+				break;
+			case 1:
+				System.out.println("今天是星期一");
+				break;
+			case 2:
+				System.out.println("今天是星期二");
+				break;
+			case 3:
+				System.out.println("今天是星期三");
+				break;
+			case 4:
+				System.out.println("今天是星期四");
+				break;
+			case 5:
+				System.out.println("今天是星期五");
+				break;
+			case 6:
+				System.out.println("今天是星期六");
+				break;
+			default:
+				break;
+			}
+		}
+	}
+
+}
